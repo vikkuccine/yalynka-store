@@ -1,0 +1,79 @@
+.header {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-first-block {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__location {
+        position: relative;
+        margin-left: 32px;
+        cursor: pointer;
+        font-weight: 500;
+
+        &::after {
+            content: "";
+            background-image: url(../images/location-icon.svg);
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: -32px;
+            top: -4px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        gap: 72px;
+    }
+
+    &__text-li {
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 36px;
+    }
+
+    &__number {
+        font-weight: 500;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(../images/viber-icon.svg);
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: -24px;
+            top: 0
+        }
+    }
+
+    &__btn {
+        background-color: #588A3D;
+        color: #fff;
+        position: relative;
+        font-size: 12px;
+        font-weight: 500; 
+        padding: 4px 26px 5px 46px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            background-image: url(../images/phone-icon-sm.svg);
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            left: 20px;
+            top: 5px;
+        }
+    }
+}
