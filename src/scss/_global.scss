@@ -56,3 +56,55 @@ body {
 	font-weight: 500;
 }
 
+.title-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__link {
+	}
+
+	&__arrows {
+		display: flex;
+		gap: 8px;
+	}
+
+	&__left-arrow {
+		background-color: #588A3D;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(-180deg);
+		}
+	}
+
+	&__right-arrow {
+		background-color: #588A3D;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.swiper-button-disabled {
+	background-color: #C4C4C4;
+}
+

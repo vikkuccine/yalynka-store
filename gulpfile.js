@@ -52,6 +52,7 @@ function images() {
 
 function scripts() {
     return src([
+        'node_modules/swiper/swiper-bundle.min.js',
         'src/js/main.js'
     ])
         .pipe(concat('main.min.js'))
