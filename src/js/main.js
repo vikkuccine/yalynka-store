@@ -16,6 +16,8 @@ const swiperHits = new Swiper('.hits__items', {
     slidesPerView: 4,
     spaceBetween: 32,
     loop: false,
+    simulateTouch: true, 
+    touchStartPreventDefault: false,
 });
 
 const swiperImg = new Swiper('.card__photo', {
@@ -28,6 +30,20 @@ const swiperImg = new Swiper('.card__photo', {
         el: ".card__pagination",
     },
 });
+
+
+const swiperDiscount = new Swiper('.discount__items', {
+    navigation: {
+        nextEl: ".discount__right-arrow",
+        prevEl: ".discount__left-arrow",
+    },
+    slidesPerView: 4,
+    spaceBetween: 32,
+    loop: false,
+    simulateTouch: true, 
+    touchStartPreventDefault: false,
+});
+
 
 
 const heartBlock = document.querySelectorAll(".card__icon-img")
@@ -45,4 +61,27 @@ heartBlock.forEach(element => {
     })
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const element = document.querySelector('.js-choice');
+    const choices = new Choices(element, {
+        searchEnabled: false,
+        choices: [
+            {
+                value: '3',
+                label: '3 м',
+                selected: false,
+            },
+            {
+                value: '5',
+                label: '5 м',
+                selected: false,
+            },
+            {
+                value: '6',
+                label: '6 м',
+                selected: false,
+            },
+        ]
+    })
+})
 

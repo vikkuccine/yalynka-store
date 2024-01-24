@@ -114,6 +114,7 @@
         &::after {
             content: "";
             background-image: url(../images/search-icon.svg);
+            background-repeat: no-repeat;
             position: absolute;
             background-size: contain;
             width: 15px;
@@ -422,6 +423,18 @@
     height: 100%;
 }
 
+.discount {
+    padding: 112px 0 32px 0;
+
+    &__title {
+        padding-bottom: 53px;
+    }
+
+    &__link {
+        margin: 0 0 52px 24px;
+        border-bottom: 1px solid #333;
+    }
+}
 
 
 .hits {
@@ -456,20 +469,22 @@
     &__item {
         border-radius: 8px;
         border: 1px solid #C4C4C4;
-        overflow: hidden;
         box-sizing: border-box;
         cursor: pointer;
         transition: all .3s ease-in-out;
 
         &:hover {
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-            transform: scale(1.01);
         }
     }
 
     &__photo {
         position: relative;
+        border-radius: 7px 7px 0 0;
+        overflow: hidden;
     }
+
+
 
     &__btn-block {
         display: flex;
@@ -529,19 +544,35 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        &.card__sub-title--select {
+            margin-bottom: 16px;
+        }
     }
+
 
     &__price-block {
         display: flex;
         justify-content: space-between;
         margin: 0 20px 48px 14px;
         align-items: center;
+
+        &.card__price-block--select {
+            margin-bottom: 43px;
+        }
     }
 
     &__price {
         display: flex;
         flex-direction: column;
         gap: 4px;
+
+        &.card__price--select {
+            margin-bottom: 20px;
+            margin-left: 14px;
+        }
+
+
     }
 
     &__price-text {
@@ -553,12 +584,25 @@
         color: #DC0000;
         font-size: 20px;
         font-weight: 600;
+
+        &.card__price-number--discount {
+            display: flex;
+            align-items: center;
+
+            .card__price-number--discount {
+                margin-left: 25px;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: line-through;
+                color: #333;
+            }
+        }
     }
 
-    &__icon {
-        &__icon-img {
-            width: 36px;
-        }
+    &__icon {}
+
+    &__icon-img {
+        width: 36px;
     }
 
     &__btns {

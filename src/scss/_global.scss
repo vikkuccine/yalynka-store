@@ -54,12 +54,14 @@ body {
 .title {
 	font-size: 40px;
 	font-weight: 500;
+
+	
 }
 
 .title-header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+
 
 	&__link {
 	}
@@ -67,6 +69,7 @@ body {
 	&__arrows {
 		display: flex;
 		gap: 8px;
+		margin-left: auto;
 	}
 
 	&__left-arrow {
