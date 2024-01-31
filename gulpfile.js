@@ -52,6 +52,7 @@ function images() {
 
 function scripts() {
     return src([
+        "node_modules/tw-elements/dist/js/tw-elements.umd.min.js",
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/choices.js/public/assets/scripts/choices.min.js',
         'src/js/main.js'

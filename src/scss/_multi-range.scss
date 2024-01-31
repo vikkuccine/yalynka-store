@@ -1,0 +1,160 @@
+.price-wrapper__main h4 {
+    padding: 0 0;
+    margin: 0 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.multi-range-slider {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    display: block;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    margin: 0;
+    pointer-events: none;
+
+}
+
+
+#input-left {
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#input-right {
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 0 none;
+    width: 22px;
+    height: 17px;
+    background-image: url('../images/scale-icon.svg');
+    background-repeat: no-repeat;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 rgba(38, 152, 217, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    cursor: pointer;
+    border: 0 none;
+    width: 22px;
+    height: 17px;
+    background-image: url('../images/scale-icon.svg');
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(38, 152, 217, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    pointer-events: all;
+    border: 0 none;
+    cursor: pointer;
+    width: 22px;
+    height: 17px;
+    background-image: url('../images/scale-icon.svg');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 0 rgba(38, 152, 217, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    top: 7px;
+    z-index: 1;
+    height: 6px;
+}
+
+.slider>.track {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #EDEDED;
+}
+
+.slider>.range {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #588A3D;
+}
+
+.price-from {}
+
+.price {
+
+    &__input {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #C4C4C4;
+        border-radius: 8px;
+        padding: 10px;
+        width: 160px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 8px;
+        font-size: 13px;
+        margin-top: 11px;
+        margin-bottom: 16px;
+    }
+}
+
+.price__wrapper>label>input {
+    all: unset;
+    width: 100%;
+}
