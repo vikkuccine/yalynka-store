@@ -759,46 +759,6 @@
 
 .catalog {
 
-    &__block-bread-crumbs {
-        display: flex;
-        gap: 70px;
-        margin-bottom: 8px;
-    }
-
-    &__bread-crumbs {
-        position: relative;
-        cursor: pointer;
-
-
-        &::after {
-            content: '';
-            position: absolute;
-            background-image: url('../images/katalog-arrow-icon.svg');
-            background-repeat: no-repeat;
-            top: 50%;
-            left: 72px;
-            width: 56px;
-            height: 8px;
-            transform: translateY(-50%);
-        }
-    }
-
-    &__bread-crumbs-item {
-        color: #C4C4C4;
-        position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            background-image: url('../images/full-check-icon.svg');
-            background-repeat: no-repeat;
-            width: 16px;
-            height: 16px;
-            top: 3px;
-            right: -28px;
-        }
-    }
-
     &__title {
         margin-bottom: 24px;
     }
@@ -887,8 +847,146 @@
         gap: 22px;
     }
 
-    &__pagination {
-        
+    &__pagination {}
+}
+
+.card-item {
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mySwiper2 {
+        height: 80%;
+        width: 100%;
+    }
+
+    .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bread-crumbs__link {
+        color: #333;
+    }
+
+    &__bread-crumbs-link {
+        color: #C4C4C4;
+        margin-left: 32px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/katalog-arrow-icon.svg);
+            background-repeat: no-repeat;
+            top: 50%;
+            left: -64px;
+            width: 56px;
+            height: 8px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__title-wrap {
+        margin: 16px 0;
+        display: flex;
+    }
+
+    &__title {
+    }
+
+    &__liks {}
+
+    &__article {
+        margin-bottom: 32px;
+    }
+
+    &__card-wrap {}
+
+    &__swiper {}
+
+    &__btn-next {}
+
+    &__btn-prev {}
+
+    &__content {}
+
+    &__filters {}
+
+    &__lable {}
+
+    &__lable-item {}
+
+    &__value {}
+
+    &__value-item {}
+
+    &__seo-text {}
+
+    &__sub-title {}
+
+    &__wrapper {}
+
+    &__price-block {}
+
+    &__available {}
+
+    &__price {}
+
+
+    .bread-crumbs {
+
+        &__text {}
+
+        &__link {}
     }
 
 }

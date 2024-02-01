@@ -4,8 +4,8 @@ html {
 
 *,
 *::after,
-*::before{
-  box-sizing: inherit;
+*::before {
+	box-sizing: inherit;
 }
 
 html,
@@ -55,7 +55,7 @@ body {
 	font-size: 40px;
 	font-weight: 500;
 
-	
+
 }
 
 .title-header {
@@ -63,8 +63,7 @@ body {
 	align-items: center;
 
 
-	&__link {
-	}
+	&__link {}
 
 	&__arrows {
 		display: flex;
@@ -111,3 +110,44 @@ body {
 	background-color: #C4C4C4;
 }
 
+.bread-crumbs {
+	display: flex;
+	gap: 70px;
+	margin-bottom: 8px;
+
+
+	&__text {
+		position: relative;
+		cursor: pointer;
+
+
+		&::after {
+			content: '';
+			position: absolute;
+			background-image: url('../images/katalog-arrow-icon.svg');
+			background-repeat: no-repeat;
+			top: 50%;
+			left: 72px;
+			width: 56px;
+			height: 8px;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__link {
+		color: #C4C4C4;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			background-image: url('../images/full-check-icon.svg');
+			background-repeat: no-repeat;
+			width: 16px;
+			height: 16px;
+			top: 3px;
+			right: -28px;
+		}
+	}
+
+}

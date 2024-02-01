@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="visibility: hidden; position: absolute; width: 0; height: 0;">
+        <symbol id="icon-instagram" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path
+                    d="M17.5034 0H6.49657C2.9143 0 0 2.9143 0 6.49657V17.5036C0 21.0857 2.9143 24 6.49657 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49657C24 2.9143 21.0857 0 17.5034 0V0ZM22.593 17.5036C22.593 20.3098 20.3098 22.593 17.5034 22.593H6.49657C3.69012 22.593 1.40698 20.3098 1.40698 17.5036V6.49657C1.40698 3.69012 3.69012 1.40698 6.49657 1.40698H17.5036C20.3098 1.40698 22.593 3.69012 22.593 6.49657V17.5036Z"
+                    fill="currentColor" />
+                <path
+                    d="M12 5.43774C8.38146 5.43774 5.43768 8.38152 5.43768 12C5.43768 15.6186 8.38146 18.5624 12 18.5624C15.6185 18.5624 18.5623 15.6186 18.5623 12C18.5623 8.38152 15.6185 5.43774 12 5.43774ZM12 17.1554C9.15746 17.1554 6.84466 14.8428 6.84466 12C6.84466 9.15752 9.15746 6.84472 12 6.84472C14.8427 6.84472 17.1553 9.15752 17.1553 12C17.1553 14.8428 14.8427 17.1554 12 17.1554Z"
+                    fill="currentColor" />
+                <path
+                    d="M18.7192 3.10718C17.6499 3.10718 16.7802 3.97711 16.7802 5.04626C16.7802 6.1156 17.6499 6.98553 18.7192 6.98553C19.7886 6.98553 20.6585 6.1156 20.6585 5.04626C20.6585 3.97693 19.7886 3.10718 18.7192 3.10718ZM18.7192 5.57836C18.4259 5.57836 18.1871 5.3396 18.1871 5.04626C18.1871 4.75274 18.4259 4.51416 18.7192 4.51416C19.0128 4.51416 19.2515 4.75274 19.2515 5.04626C19.2515 5.3396 19.0128 5.57836 18.7192 5.57836Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+    
+        <symbol id="icon-youtube" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path
+                    d="M15.6941 10.9214L10.3919 8.02027C10.087 7.85346 9.72668 7.85968 9.42785 8.03675C9.12884 8.21399 8.9505 8.5271 8.9505 8.87463V14.6271C8.9505 14.9729 9.12775 15.2855 9.42474 15.4629C9.57983 15.5556 9.75177 15.6021 9.92407 15.6021C10.0819 15.6021 10.2401 15.5631 10.3857 15.4847L15.688 12.6336C16.0028 12.4642 16.1992 12.137 16.2007 11.7794C16.202 11.4218 16.0079 11.0931 15.6941 10.9214ZM10.3569 13.9034V9.60412L14.3197 11.7724L10.3569 13.9034Z"
+                    fill="currentColor" />
+                <path
+                    d="M23.8234 7.19658L23.8223 7.18559C23.802 6.99242 23.5996 5.27416 22.7643 4.4002C21.7988 3.37225 20.7042 3.24737 20.1778 3.1875C20.1342 3.18256 20.0943 3.17798 20.0586 3.17322L20.0166 3.16882C16.8438 2.93811 12.0521 2.90662 12.0042 2.90643L12 2.90625L11.9957 2.90643C11.9478 2.90662 7.1561 2.93811 3.9547 3.16882L3.9124 3.17322C3.87834 3.17779 3.84081 3.18201 3.79997 3.18677C3.27959 3.24682 2.19671 3.37189 1.22845 4.43701C0.43286 5.30163 0.20288 6.98308 0.17926 7.17204L0.176513 7.19658C0.169372 7.27696 0 9.19059 0 11.1117V12.9076C0 14.8287 0.169372 16.7424 0.176513 16.8229L0.177795 16.835C0.198119 17.0251 0.400267 18.7119 1.23175 19.5862C2.13958 20.5797 3.28746 20.7112 3.90489 20.7819C4.00249 20.793 4.08653 20.8025 4.14384 20.8126L4.19932 20.8203C6.03129 20.9946 11.7751 21.0805 12.0186 21.084L12.026 21.0842L12.0333 21.084C12.0813 21.0838 16.8727 21.0523 20.0456 20.8216L20.0875 20.8172C20.1276 20.8119 20.1726 20.8071 20.2221 20.802C20.7395 20.7471 21.8166 20.633 22.7715 19.5823C23.567 18.7175 23.7972 17.0361 23.8206 16.8473L23.8234 16.8228C23.8305 16.7422 24.0001 14.8287 24.0001 12.9076V11.1117C23.9999 9.19059 23.8305 7.27714 23.8234 7.19658ZM22.5935 12.9076C22.5935 14.6857 22.4382 16.517 22.4236 16.6851C22.3639 17.1481 22.1213 18.212 21.7336 18.6333C21.136 19.2908 20.522 19.356 20.0738 19.4034C20.0196 19.4091 19.9694 19.4146 19.924 19.4203C16.8552 19.6422 12.2444 19.6763 12.032 19.6775C11.7938 19.6741 6.13401 19.5875 4.35789 19.4225C4.26689 19.4076 4.16856 19.3963 4.06493 19.3846C3.53923 19.3243 2.81963 19.2419 2.26629 18.6333L2.25329 18.6194C1.87243 18.2226 1.63677 17.2278 1.5769 16.6906C1.56573 16.5635 1.40643 14.7106 1.40643 12.9076V11.1117C1.40643 9.33561 1.56133 7.50639 1.57635 7.33482C1.64758 6.78935 1.89477 5.78997 2.26629 5.38604C2.88225 4.70855 3.53172 4.63348 3.96129 4.58386C4.0023 4.5791 4.04057 4.5747 4.07591 4.57012C7.18942 4.3471 11.8333 4.31396 12 4.31268C12.1666 4.31378 16.8088 4.3471 19.8947 4.57012C19.9326 4.57488 19.974 4.57964 20.0185 4.58477C20.4603 4.63513 21.1281 4.7113 21.7409 5.36498L21.7466 5.37102C22.1275 5.76781 22.3631 6.78001 22.423 7.32805C22.4336 7.44798 22.5935 9.30485 22.5935 11.1117V12.9076Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+    
+        <symbol id="icon-facebook" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path
+                    d="M3.51562 24H11.3438V15.4688H8.53125V12.6562H11.3438V9.14062C11.3438 7.20209 12.9208 5.625 14.8594 5.625H18.375V8.4375H15.5625C14.787 8.4375 14.1562 9.0683 14.1562 9.84375V12.6562H18.2481L17.7794 15.4688H14.1562V24H20.4844C22.4229 24 24 22.4229 24 20.4844V3.51562C24 1.57709 22.4229 0 20.4844 0H3.51562C1.57709 0 0 1.57709 0 3.51562V20.4844C0 22.4229 1.57709 24 3.51562 24ZM1.40625 3.51562C1.40625 2.35254 2.35254 1.40625 3.51562 1.40625H20.4844C21.6475 1.40625 22.5938 2.35254 22.5938 3.51562V20.4844C22.5938 21.6475 21.6475 22.5938 20.4844 22.5938H15.5625V16.875H18.9706L19.9081 11.25H15.5625V9.84375H19.7812V4.21875H14.8594C12.1454 4.21875 9.9375 6.42664 9.9375 9.14062V11.25H7.125V16.875H9.9375V22.5938H3.51562C2.35254 22.5938 1.40625 21.6475 1.40625 20.4844V3.51562Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+    </svg>
+    <div class="wrapper">
+        <header class="header">
+            <div class="shadow">
+                <div class="container">
+                    <nav class="header-first-block">
+                        <a class="header-first-block__location">Київ</a>
+                        <ul class="header-first-block__text">
+                            <a class="header-first-block__text-li">Оплата</a>
+                            <a class="header-first-block__text-li">Доставка</a>
+                            <a class="header-first-block__text-li">Поради</a>
+                            <a class="header-first-block__text-li">Оптовикам</a>
+                            <a class="header-first-block__text-li">Контакти</a>
+                        </ul>
+                        <div class="header-first-block__wrap">
+                            <a class="header-first-block__number" href="tel:+096-532-95-87">+096-532-95-87</a>
+                            <buttun class="header-first-block__btn">Замовити дзвінок</buttun>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header-second-block">
+                    <div class="header-second-block__block">
+                        <div class="header-second-block__logo">
+                            <img src="./images/logo-transparent.png" alt="">
+                        </div>
+                        <div class="header-second-block__text">Новорічний магазин в Києві</div>
+                    </div>
+                    <div class="header-second-block__wrap">
+                        <div class="header-second-block__input-after">
+                            <input type="text" class="header-second-block__input" placeholder="Пошук товарів">
+                        </div>
+                        <nav class="header-second-block__menu">
+                            <a class="header-second-block__menu-item" href="#">Штучні ялинки</a>
+                            <a class="header-second-block__menu-item" href="#">Ялинкові кулі</a>
+                            <a class="header-second-block__menu-item" href="#">Новорічний декор</a>
+                            <a class="header-second-block__menu-item" href="#">Святкові гірлянди</a>
+                            <a class="header-second-block__menu-item" href="#">Послуги</a>
+                            <a class="header-second-block__menu-item" href="#">% Знижки</a>
+                        </nav>
+                    </div>
+                    <div class="header-second-block__icon">
+                        <img src="./images/heart-icon.svg" alt="іконка сердечка">
+                    </div>
+                    <a class="header-second-block__cart" href="#">
+                        <div class="header-second-block__cart-text">Корзина(0)</div>
+                        <div class="header-second-block__cart-subtext">Ваша корзина порожня</div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="card-item">
+                <div class="container">
+                    <div class="bread-crumbs">
+                        <p class="bread-crumbs__text">Головна</p>
+                        <a href="#" class="bread-crumbs__link">Штучні ялинки</a>
+                        <a href="#" class="card-item__bread-crumbs-link">Настільна штучна ялинка Верона</a>
+                    </div>
+                    <div class="card-item__title-wrap">
+                        <h2 class="card-item__title title">Настільна штучна ялинка Верона</h2>
+                        <div class="card-item__liks">В обране</div>
+                    </div>
+                    <div class="card-item__article">Артикул товару ЕВС 12</div>
+                    <div class="card-item__card-wrap">
+                        <div class="card-item__swiper">
+
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next card-item__btn-next"></div>
+                                <div class="swiper-button-prev card-item__btn-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-item__content">
+                            <div class="card-item__filters">
+                                <div class="card-item__lable">
+                                    <div class="card-item__lable-item">Колір хвої</div>
+                                    <div class="card-item__lable-item">Матеріал</div>
+                                    <div class="card-item__lable-item">Кріплення гілок</div>
+                                    <div class="card-item__lable-item">Матеріал підставки</div>
+                                </div>
+                                <div class="card-item__value">
+                                    <div class="card-item__value-item">зелений</div>
+                                    <div class="card-item__value-item">лита</div>
+                                    <div class="card-item__value-item">згинальні</div>
+                                    <div class="card-item__value-item">метал</div>
+                                </div>
+                            </div>
+                            <p class="card-item__seo-text">Під час підготовки до довгоочікуваних зимових свят варто
+                                віддати належну увагу символу урочистостей. Пухнаста густа крона, насичений зелений
+                                колір, дивовижний зовнішній вигляд - це лише невелика частина достоїнств, яка таїть у
+                                собі штучна ялина "Зоряна".</p>
+                            <p class="card-item__sub-title">Відеоогляд</p>
+                            <div class="card-item__wrapper">
+                                <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+                                    style="padding-top: 42.857143%">
+                                    <iframe
+                                        class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+                                        allowfullscreen="" data-gtm-yt-inspected-2340190_699="true"
+                                        id="240632615"></iframe>
+                                </div>
+                                <div class="card-item__price-block">
+                                    <select class="card-choice__selector js-choice" name="" id="">
+                                        <option value="">Висота</option>
+                                    </select>
+                                    <p class="card-item__available">В наявності</p>
+                                    <div class="card-item__price">5300 грн</div>
+                                    <div class="card__btns">
+                                        <button class="card__left-btn">В корзину</button>
+                                        <button class="card__right-rtn">Купити в 1 клік</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seo-block">
+
+                <div class="container">
+
+                    <div class="seo-block__first">
+
+                        <h2 class="seo-block__title title">Купити ялинкові прикраси у Києві</h2>
+
+                        <p class="seo-block__text">
+
+                            Звільніть свою фантазію та створіть неперевершену атмосферу святкового дива у вашому домі з
+
+                            нашого інтернет-магазину новорічних прикрас! Від витончених гірлянд та сяючих куль до
+
+                            чарівних віночків та оригінальних прикрас для ялинки - у нас є все необхідне для того, щоб
+
+                            створити неповторний новорічний декор.
+
+            
+
+                            Наш асортимент налічує тисячі варіантів прикрас різних стилів та кольорів. Ви можете обрати
+
+                            класичні елементи для традиційного оформлення або вибрати сучасні та креативні рішення для
+
+                            створення унікального новорічного амбієнту. Відбудьте святкування у вашому стилі, обираючи
+
+                            із розмаїття наших ексклюзивних прикрас.</p>
+
+                    </div>
+
+                    <div class="seo-block__second">
+
+                        <h2 class="seo-block__title title">Штучні ялинки на любий гаманець</h2>
+
+                        <p class="seo-block__text">
+
+                            Наш асортимент включає різноманіття стилів, від класичних до сучасних, і різних розмірів,
+
+                            щоб ви могли знайти саме ту, яка ідеально впишеться в ваш простір. Вишукані деталі,
+
+                            реалістичний зовнішній вигляд та стійкість до часу – це лише кілька переваг наших штучних
+
+                            ялинок.
+
+            
+
+                            Щоб зробити ваш вибір ще простішим, ми пропонуємо різноманіття ялинкових комплектів та
+
+                            прикрас, які допоможуть створити унікальний декор для вашої ялинки. Ми горді тим, що наші
+
+                            вироби виготовлені з високоякісних матеріалів, гарантуючи тривалу службу та радість кожного
+
+                            нового святкового сезону.
+
+            
+
+                            Замовте штучну ялинку в нашому магазині прямо зараз і отримайте не лише якісний продукт, але
+
+                            й зручність доставки та безпеку оплати. Прикрасьте свій дім разом із нами і насолоджуйтеся
+
+                            святковим чарівним настроєм у кожен момент!</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__logo">
+                        <img src="./images/logo-white.png" alt="">
+                    </div>
+                    <div class="footer__first-column footer__flex-container">
+                        <div class="footer__first-column-item">Каталог</div>
+                        <a class="footer__first-column-item" href="#">Штучні ялинки</a>
+                        <a class="footer__first-column-item" href="#">Високі ялинки</a>
+                        <a class="footer__first-column-item" href="#">Ялинкові кулі</a>
+                        <a class="footer__first-column-item" href="#">Новорічний декор</a>
+                        <a class="footer__first-column-item" href="#">Світові герлянди</a>
+                    </div>
+                    <div class="footer__second-column footer__flex-container">
+                        <div class="footer__second-column-item">Про компанію</div>
+                        <a class="footer__second-column-item" href="#">Послуги</a>
+                        <a class="footer__second-column-item" href="#">Оптовикам</a>
+                        <a class="footer__second-column-item" href="#">Контакти</a>
+                    </div>
+                    <div class="footer__third-column footer__flex-container">
+                        <div class="footer__third-column-item">Інформація</div>
+                        <a class="footer__third-column-item" href="#">Доставка</a>
+                        <a class="footer__third-column-item" href="#">Оплата</a>
+                        <a class="footer__third-column-item" href="#">Обмін та повернення</a>
+                        <a class="footer__third-column-item" href="#">Політика кофіденціальності</a>
+                    </div>
+                    <div class="footer__fourth-column footer__flex-container">
+                        <div class="footer__fourth-column-item">Контакти</div>
+                        <a class="footer__fourth-column-item" href="tel:+096-532-95-87">+096-532-95-87</a>
+                        <a class="footer__fourth-column-item" href="#">З 09:00 до 20:00 без вихідних і свят</a>
+                        <a class="footer__fourth-column-item" href="#">Замовити дзвінок</a>
+                    </div>
+                    <div class="footer__fifth-column footer__flex-container">
+                        <div class="footer__fifth-column-item">Ми в соцмережах</div>
+                        <div class="footer__social">
+                            <svg class="footer__social-icon footer__social-icon--instagram">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                            <svg class="footer__social-icon footer__social-icon--youtube">
+                                <use xlink:href="#icon-youtube"></use>
+                            </svg>
+                            <svg class="footer__social-icon footer__social-icon--facebook">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/main.min.js"></script>
+</body>
+
+</html>
