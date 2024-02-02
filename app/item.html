@@ -37,13 +37,20 @@
             </g>
         </symbol>
     
-        <symbol id="icon-facebook" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-facebook" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g>
                 <path
                     d="M3.51562 24H11.3438V15.4688H8.53125V12.6562H11.3438V9.14062C11.3438 7.20209 12.9208 5.625 14.8594 5.625H18.375V8.4375H15.5625C14.787 8.4375 14.1562 9.0683 14.1562 9.84375V12.6562H18.2481L17.7794 15.4688H14.1562V24H20.4844C22.4229 24 24 22.4229 24 20.4844V3.51562C24 1.57709 22.4229 0 20.4844 0H3.51562C1.57709 0 0 1.57709 0 3.51562V20.4844C0 22.4229 1.57709 24 3.51562 24ZM1.40625 3.51562C1.40625 2.35254 2.35254 1.40625 3.51562 1.40625H20.4844C21.6475 1.40625 22.5938 2.35254 22.5938 3.51562V20.4844C22.5938 21.6475 21.6475 22.5938 20.4844 22.5938H15.5625V16.875H18.9706L19.9081 11.25H15.5625V9.84375H19.7812V4.21875H14.8594C12.1454 4.21875 9.9375 6.42664 9.9375 9.14062V11.25H7.125V16.875H9.9375V22.5938H3.51562C2.35254 22.5938 1.40625 21.6475 1.40625 20.4844V3.51562Z"
                     fill="currentColor" />
             </g>
         </symbol>
+    
+        <symbol id="icon-heart" viewBox="-2 -2 40 37" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M18 33C17.4875 33 16.9934 32.8087 16.6083 32.4612C15.154 31.1509 13.7519 29.9197 12.5148 28.8335L12.5085 28.8279C8.88162 25.6434 5.74969 22.8933 3.57056 20.1842C1.13461 17.1557 0 14.2842 0 11.1472C0 8.09945 1.01431 5.28766 2.8559 3.22948C4.71945 1.14696 7.27652 0 10.0569 0C12.1349 0 14.0381 0.676911 15.7132 2.01177C16.5586 2.68557 17.3249 3.5102 18 4.47209C18.6754 3.5102 19.4414 2.68557 20.2871 2.01177C21.9622 0.676911 23.8653 0 25.9434 0C28.7235 0 31.2808 1.14696 33.1444 3.22948C34.986 5.28766 36 8.09945 36 11.1472C36 14.2842 34.8657 17.1557 32.4297 20.184C30.2507 22.8932 27.1192 25.6429 23.4931 28.8269L23.4926 28.8273C22.2534 29.9151 20.849 31.1484 19.3914 32.4618C19.0066 32.8087 18.5122 33 18 33Z" />
+        </symbol>
+    
     </svg>
     <div class="wrapper">
         <header class="header">
@@ -106,7 +113,11 @@
                     </div>
                     <div class="card-item__title-wrap">
                         <h2 class="card-item__title title">Настільна штучна ялинка Верона</h2>
-                        <div class="card-item__liks">В обране</div>
+                        <a class="card-item__likes" href="#">В обране
+                            <svg class="card-item__heart">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                        </a>
                     </div>
                     <div class="card-item__article">Артикул товару ЕВС 12</div>
                     <div class="card-item__card-wrap">
@@ -115,70 +126,34 @@
                             <div class="swiper mySwiper2">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                        <img src="../images/card-item-1.jpg" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                        <img src="../images/card-item-2.jpg" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                        <img src="../images/card-item-3.jpg" />
                                     </div>
                                 </div>
-                                <div class="swiper-button-next card-item__btn-next"></div>
-                                <div class="swiper-button-prev card-item__btn-prev"></div>
+                                <div class="card-item__btns arrow-block">
+                                    <div class="card-item__prev-btn arrow-block__prev">
+                                        <img src="./images/arrov-icon.svg" alt="">
+                                    </div>
+                                    <div class="card-item__next-btn arrow-block__next">
+                                        <img src="./images/arrov-icon.svg" alt="">
+                                    </div>
+                                </div>
                             </div>
                             <div thumbsSlider="" class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                        <img src="../images/card-item-1.jpg" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                        <img src="../images/card-item-2.jpg" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                        <img src="../images/card-item-3.jpg" />
                                     </div>
                                 </div>
                             </div>
@@ -188,14 +163,21 @@
                             <div class="card-item__filters">
                                 <div class="card-item__lable">
                                     <div class="card-item__lable-item">Колір хвої</div>
-                                    <div class="card-item__lable-item">Матеріал</div>
-                                    <div class="card-item__lable-item">Кріплення гілок</div>
-                                    <div class="card-item__lable-item">Матеріал підставки</div>
-                                </div>
-                                <div class="card-item__value">
                                     <div class="card-item__value-item">зелений</div>
-                                    <div class="card-item__value-item">лита</div>
+                                </div>
+
+                                <div class="card-item__lable">
+                                    <div class="card-item__lable-item">Матеріал</div>
+                                    <div class="card-item__value-item">литий</div>
+                                </div>
+
+                                <div class="card-item__lable">
+                                    <div class="card-item__lable-item">Кріплення гілок</div>
                                     <div class="card-item__value-item">згинальні</div>
+                                </div>
+
+                                <div class="card-item__lable">
+                                    <div class="card-item__lable-item">Матеріал підставки</div>
                                     <div class="card-item__value-item">метал</div>
                                 </div>
                             </div>
@@ -205,13 +187,15 @@
                                 собі штучна ялина "Зоряна".</p>
                             <p class="card-item__sub-title">Відеоогляд</p>
                             <div class="card-item__wrapper">
-                                <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
-                                    style="padding-top: 42.857143%">
-                                    <iframe
-                                        class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
-                                        src="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
-                                        allowfullscreen="" data-gtm-yt-inspected-2340190_699="true"
-                                        id="240632615"></iframe>
+                                <div class="card-item__video-block">
+                                    <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+                                        style="padding-top: 42.857143%">
+                                        <iframe
+                                            class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
+                                            src="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+                                            allowfullscreen="" data-gtm-yt-inspected-2340190_699="true"
+                                            id="240632615"></iframe>
+                                    </div>
                                 </div>
                                 <div class="card-item__price-block">
                                     <select class="card-choice__selector js-choice" name="" id="">
@@ -219,83 +203,15 @@
                                     </select>
                                     <p class="card-item__available">В наявності</p>
                                     <div class="card-item__price">5300 грн</div>
-                                    <div class="card__btns">
-                                        <button class="card__left-btn">В корзину</button>
-                                        <button class="card__right-rtn">Купити в 1 клік</button>
+                                    <div class="card-item__price-btns card__btns">
+                                        <button class="card__left-btn card-item__left-btn">В корзину</button>
+                                        <button class="card__right-rtn card-item__right-btn">Купити в 1 клік</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="seo-block">
-
-                <div class="container">
-
-                    <div class="seo-block__first">
-
-                        <h2 class="seo-block__title title">Купити ялинкові прикраси у Києві</h2>
-
-                        <p class="seo-block__text">
-
-                            Звільніть свою фантазію та створіть неперевершену атмосферу святкового дива у вашому домі з
-
-                            нашого інтернет-магазину новорічних прикрас! Від витончених гірлянд та сяючих куль до
-
-                            чарівних віночків та оригінальних прикрас для ялинки - у нас є все необхідне для того, щоб
-
-                            створити неповторний новорічний декор.
-
-            
-
-                            Наш асортимент налічує тисячі варіантів прикрас різних стилів та кольорів. Ви можете обрати
-
-                            класичні елементи для традиційного оформлення або вибрати сучасні та креативні рішення для
-
-                            створення унікального новорічного амбієнту. Відбудьте святкування у вашому стилі, обираючи
-
-                            із розмаїття наших ексклюзивних прикрас.</p>
-
-                    </div>
-
-                    <div class="seo-block__second">
-
-                        <h2 class="seo-block__title title">Штучні ялинки на любий гаманець</h2>
-
-                        <p class="seo-block__text">
-
-                            Наш асортимент включає різноманіття стилів, від класичних до сучасних, і різних розмірів,
-
-                            щоб ви могли знайти саме ту, яка ідеально впишеться в ваш простір. Вишукані деталі,
-
-                            реалістичний зовнішній вигляд та стійкість до часу – це лише кілька переваг наших штучних
-
-                            ялинок.
-
-            
-
-                            Щоб зробити ваш вибір ще простішим, ми пропонуємо різноманіття ялинкових комплектів та
-
-                            прикрас, які допоможуть створити унікальний декор для вашої ялинки. Ми горді тим, що наші
-
-                            вироби виготовлені з високоякісних матеріалів, гарантуючи тривалу службу та радість кожного
-
-                            нового святкового сезону.
-
-            
-
-                            Замовте штучну ялинку в нашому магазині прямо зараз і отримайте не лише якісний продукт, але
-
-                            й зручність доставки та безпеку оплати. Прикрасьте свій дім разом із нами і насолоджуйтеся
-
-                            святковим чарівним настроєм у кожен момент!</p>
-
-                    </div>
-
-                </div>
-
             </div>
         </main>
         <footer class="footer">

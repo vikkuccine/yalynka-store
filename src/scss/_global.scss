@@ -151,3 +151,53 @@ body {
 	}
 
 }
+
+.arrow-block {
+	display: flex;
+	gap: 6px;
+	position: absolute;
+	top: 29px;
+	right: 19px;
+	z-index: 10;
+
+
+	&__prev {
+		background-color: #588A3D;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(-180deg);
+			width: 30%;
+		}
+	}
+
+	&__next {
+		background-color: #588A3D;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 30%;
+		}
+	}
+}
+
+.swiper-button-disabled {
+    background-color: #C4C4C4;
+}

@@ -118,3 +118,7 @@
 .is-open .choices__list--dropdown, .is-open .choices__list[aria-expanded] {
     border-color: #588A3D;
 }
+
+.card-item .choices__inner {
+    width: 100%;
+}
