@@ -6,6 +6,14 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.side-menu {
+    display: none;
+}
+
+.mobile-resize__wrap {
+    display: none;
+}
+
 .header-first-block {
     height: 40px;
     display: flex;
@@ -184,7 +192,17 @@
     }
 
     &__icon {
-        margin-left: 20px;
+        margin: 0 20px;
+        min-width: 30px;
+    }
+
+    &__cart-icon {
+        display: none;
+
+        img {
+            min-width: 30px;
+        }
+        
     }
 
     &__cart {
@@ -283,65 +301,55 @@
         max-width: 134px;
     }
 
-    &__flex-container {
+    &__media-items {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    &__first-column {}
 
-    &__first-column-item {
-        &:first-child {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
+    &__first-column-item-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        cursor: pointer;
     }
 
-    &__second-column {}
 
-    &__second-column-item {
-        &:first-child {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
+    &__second-column-item-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        cursor: pointer;
     }
 
-    &__third-column {}
 
-    &__third-column-item {
-        &:first-child {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
+    &__third-column-item-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        cursor: pointer;
     }
 
-    &__fourth-column {}
+    &__fourth-column-item-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        cursor: pointer;
+    }
+
 
     &__fourth-column-item {
-        &:first-child {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
         &:last-child {
             border-bottom: 1px solid white;
             width: max-content;
         }
     }
 
-    &__fifth-column {}
-
-    &__fifth-column-item {
-        &:first-child {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
+    &__fifth-column-item-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 8px;
     }
 
     &__social {
@@ -392,7 +400,7 @@
             width: 35px;
             height: 24px;
             right: -62px;
-            top: 16px;
+            top: 10px;
         }
 
         &:hover {
@@ -488,11 +496,14 @@
     padding: 112px 0 32px 0;
 
     &__title {
-        padding-bottom: 53px;
+    }
+
+    &__header {
+        margin-bottom: 52px;
     }
 
     &__link {
-        margin: 0 0 52px 24px;
+        margin: 0 0 0 24px;
         border-bottom: 1px solid #333;
     }
 

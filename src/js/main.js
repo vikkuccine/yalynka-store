@@ -179,3 +179,77 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
+
+
+class FooterMedia {
+    constructor() {
+        this.fourthColumn = document.querySelector('.footer__fourth-column');
+        this.adjustTextTo = document.querySelector('.footer__fifth-column');
+        this.resizeFooter()
+    }
+
+
+    resizeFooter() {
+        window.addEventListener('resize', () => {
+            const nextSibling = document.querySelector('.footer__fourth-column .footer__fifth-column');
+
+            if (window.innerWidth <= 1100 && !nextSibling) {
+                this.fourthColumn.append(this.adjustTextTo)
+            }
+
+            if (window.innerWidth > 1100 && nextSibling) {
+                this.fourthColumn.after(this.adjustTextTo)
+            }
+        })
+
+        if (window.innerWidth <= 1100) {
+            this.fourthColumn.append(this.adjustTextTo)
+        }
+    }
+
+}
+
+const footerMedia = new FooterMedia();
+
+class DropDown {
+    constructor () {
+        this.toggleBtn = document.querySelectorAll('.footer__media-title');
+        this.gridContainer = document.querySelector('.footer__media-block');
+        this.dropDown();
+    }
+
+    dropDown() {
+        this.toggleBtn.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                const currentTarget = event.target;
+                const currentBlock = currentTarget.nextElementSibling;
+                currentBlock.classList.toggle('footer__media-items--expanded')
+            })
+        })
+       
+    }
+}
+
+const dropDown = new DropDown();
+
+
+class BurgerMenu {
+    constructor() {
+        this.menuBtn = document.querySelector('.burger-menu');
+        this.menu = document.querySelector('.side-menu');
+        this.body = document.querySelector('body')
+        this.openBurgerMenu()
+    }
+
+    openBurgerMenu() {
+        this.menuBtn.addEventListener('click', () => {
+            this.menuBtn.classList.toggle('burger-menu--open');
+            this.menu.classList.toggle('side-menu--open');
+            this.body.classList.toggle('overflow-hidden');
+        })
+    }
+
+
+}
+
+const burgerMenu = new BurgerMenu ();
