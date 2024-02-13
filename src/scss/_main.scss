@@ -202,7 +202,7 @@
         img {
             min-width: 30px;
         }
-        
+
     }
 
     &__cart {
@@ -414,8 +414,8 @@
 
     &__wrap-shadow {
         overflow: hidden;
-        padding: 20px 20px;
-        margin: -20px -20px;
+        padding: 100px 20px;
+        margin: -100px -20px;
     }
 
     &__items {
@@ -440,7 +440,7 @@
         width: 100%;
 
         img {
-            max-width: 512px;
+            aspect-ratio: 1.5;
         }
     }
 
@@ -453,16 +453,17 @@
     &__btns {
         display: flex;
         gap: 16px;
-        margin: 0 0 24px 24px;
+        margin: 0 24px 24px 24px;
     }
 
     &__btn-transparent {
-        padding: 10px 82px;
+        padding: 10px 0;
         border-radius: 8px;
         border: 1px solid #588A3D;
         color: #588A3D;
         font-weight: 500;
         box-shadow: 0px 0px 8px 0px rgba(88, 138, 61, 0.64);
+        flex: 1 0 auto;
 
         &:hover {
             background-color: #8BBF6F;
@@ -470,15 +471,20 @@
             transition: all .5s;
             border-color: #8BBF6F;
         }
+
+        &--single {
+            flex: 0 1 50%;
+        }
     }
 
     &__btn-colored {
         border-radius: 8px;
         background: #588A3D;
         box-shadow: 0px 0px 8px 0px rgba(88, 138, 61, 0.64);
-        padding: 10px 82px;
+        padding: 10px 0;
         color: #fff;
         font-weight: 500;
+        flex: 1 0 auto;
 
         &:hover {
             background-color: #8BBF6F;
@@ -495,8 +501,7 @@
 .discount {
     padding: 112px 0 32px 0;
 
-    &__title {
-    }
+    &__title {}
 
     &__header {
         margin-bottom: 52px;
@@ -509,8 +514,8 @@
 
     &__wrap-shadow {
         overflow: hidden;
-        padding: 20px 20px;
-        margin: -20px -20px;
+        padding: 100px 20px;
+        margin: -100px -20px;
     }
 
     &__items {
@@ -534,8 +539,8 @@
 
     &__wrap-shadow {
         overflow: hidden;
-        padding: 20px 20px;
-        margin: -20px -20px;
+        padding: 100px 20px;
+        margin: -100px -20px;
     }
 
     &__items {
@@ -554,8 +559,10 @@
         box-sizing: border-box;
         cursor: pointer;
         transition: all .3s ease-in-out;
-        width: 376px;
-
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
 
         &:hover {
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
@@ -566,6 +573,13 @@
         position: relative;
         border-radius: 7px 7px 0 0;
         overflow: hidden;
+    }
+
+    &__img {
+
+        img {
+            width: 100%;
+        }
     }
 
     &__label--discount {
@@ -579,10 +593,16 @@
         border-radius: 2px;
     }
 
+    &__content-wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
     &__pagination {}
 
     &__sub-title {
-        margin: 32px 0 75px 14px;
+        margin: 32px 10px 75px 14px;
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
@@ -646,7 +666,11 @@
         }
     }
 
-    &__icon {}
+    &__icon {
+        margin-left: 15px;
+        flex: 0 0 auto;
+    }
+
 
     &__icon-img {
         width: 36px;
@@ -656,6 +680,7 @@
         display: flex;
         gap: 8px;
         margin: 0 14px 40px;
+        margin-top: auto;
     }
 
     &__left-btn {
@@ -663,7 +688,7 @@
         text-align: center;
         font-size: 16px;
         font-weight: 500;
-        padding: 10px 0;
+        padding: 10px 10px;
         border: 1px solid #588A3D;
         border-radius: 8px;
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
@@ -682,7 +707,7 @@
         text-align: center;
         font-size: 16px;
         font-weight: 500;
-        padding: 10px 0;
+        padding: 10px 10px;
         border-radius: 8px;
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
         background-color: #588A3D;
@@ -720,14 +745,34 @@
 
 .catalog {
 
-    &__title {
-        margin-bottom: 24px;
+    .bread-crumbs {
+        display: none;
     }
 
 
-    &__wrap-blok {
+    &__media-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__filter-icons {
+        display: none;
+    }
+
+
+    &__wrap-block {
         display: flex;
         gap: 33px;
+    }
+
+    &__filter-icon-sort {
+        color: #333;
+    }
+
+    &__filter-icon-svg {
+        width: 24px;
+        height: 24px;
     }
 
     &__filter {
@@ -742,6 +787,7 @@
         font-size: 24px;
         font-weight: 500;
         padding-bottom: 16px;
+        text-align: center;
     }
 
     &__filter-line {
@@ -806,7 +852,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 22px;
+        position: relative;
     }
+
 
     &__pagination {}
 }

@@ -3,9 +3,19 @@ const swiperBlog = new Swiper('.blog__items', {
         nextEl: ".blog__right-arrow",
         prevEl: ".blog__left-arrow",
     },
-    slidesPerView: 3,
-    spaceBetween: 32,
+    slidesPerView: 1.3,
+    spaceBetween: 16,
     loop: false,
+    breakpoints: {
+        600: {
+            slidesPerView: 2.3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        },
+    }
 });
 
 const swiperHits = new Swiper('.hits__items', {
@@ -13,11 +23,25 @@ const swiperHits = new Swiper('.hits__items', {
         nextEl: ".hits__right-arrow",
         prevEl: ".hits__left-arrow",
     },
-    slidesPerView: 4,
-    spaceBetween: 32,
+    slidesPerView: 1.2,
+    spaceBetween: 16,
     loop: false,
     simulateTouch: true,
     touchStartPreventDefault: false,
+    breakpoints: {
+        450: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+        },
+        850: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+    },
 });
 
 const swiperImg = new Swiper('.card__photo', {
@@ -37,11 +61,25 @@ const swiperDiscount = new Swiper('.discount__items', {
         nextEl: ".discount__right-arrow",
         prevEl: ".discount__left-arrow",
     },
-    slidesPerView: 4,
+    slidesPerView: 1.2,
     spaceBetween: 32,
     loop: false,
     simulateTouch: true,
     touchStartPreventDefault: false,
+    breakpoints: {
+        450: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+        },
+        850: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+    },
 });
 
 
@@ -95,6 +133,8 @@ class HeightRangeSlider {
 
         if (this.container) {
             this.inputLeft = this.container.querySelector("#input-left");
+            this.iconLeft = this.container.querySelector(".multi-range-slider__left")
+            this.iconRight = this.container.querySelector(".multi-range-slider__right")
             this.inputRight = this.container.querySelector("#input-right");
             this.range = this.container.querySelector(".range");
             this.priceFrom = this.container.querySelector(".price-from");
@@ -140,6 +180,7 @@ class HeightRangeSlider {
 
         let percent = ((_this.value - min) / (max - min)) * 100;
 
+        this.iconLeft.style.left = `calc(${percent}% - 5px)`
         this.range.style.left = percent + "%";
     }
 
@@ -153,6 +194,7 @@ class HeightRangeSlider {
 
         let percent = ((_this.value - min) / (max - min)) * 100;
 
+        this.iconRight.style.left = `calc(${percent}% - 10px)`
         this.range.style.right = 100 - percent + "%";
     }
 }
@@ -212,7 +254,7 @@ class FooterMedia {
 const footerMedia = new FooterMedia();
 
 class DropDown {
-    constructor () {
+    constructor() {
         this.toggleBtn = document.querySelectorAll('.footer__media-title');
         this.gridContainer = document.querySelector('.footer__media-block');
         this.dropDown();
@@ -226,12 +268,41 @@ class DropDown {
                 currentBlock.classList.toggle('footer__media-items--expanded')
             })
         })
-       
+
     }
 }
 
 const dropDown = new DropDown();
 
+
+class FilterDropDown {
+    constructor() {
+        this.gridFilter = document.querySelector('.catalog__filter-media');
+        this.toggleBtnFilter = document.querySelector('.catalog__filter-icon-open');
+        this.toggleBtnSort = document.querySelector('.catalog__filter-icon-sort');
+        this.gridSort = document.querySelector('.catalog__tameplate-media');
+        this.filterIcon = document.querySelector('.catalog__filter-icon-open');
+        this.sortIcon = document.querySelector('.catalog__filter-icon-sort')
+        this.dropDownFilter()
+        this.dropDownSort()
+    }
+
+    dropDownFilter() {
+        this.toggleBtnFilter.addEventListener('click', () => {
+            this.gridFilter.classList.toggle('catalog__filter-media--expanded');
+            this.filterIcon.classList.toggle('catalog__filter-icon-open--expanded');
+        })
+    }
+
+    dropDownSort() {
+        this.toggleBtnSort.addEventListener('click', () => {
+            this.gridSort.classList.toggle('catalog__tameplate-media--expanded');
+            this.sortIcon.classList.toggle('catalog__filter-icon-sort--expanded');
+        })
+    }
+}
+
+const filterDropDown = new FilterDropDown();
 
 class BurgerMenu {
     constructor() {
@@ -252,4 +323,4 @@ class BurgerMenu {
 
 }
 
-const burgerMenu = new BurgerMenu ();
+const burgerMenu = new BurgerMenu();
