@@ -58,7 +58,7 @@ function scripts() {
         'src/js/main.js'
     ])
         .pipe(concat('main.min.js'))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(dest('app/js'))
         .pipe(browserSync.stream())
 }
@@ -91,7 +91,7 @@ function watching() {
 
 
 function cleanDist() {
-    return src('dist')
+    return src(['dist', 'app'])
         .pipe(clean())
 }
 
@@ -114,5 +114,5 @@ exports.watching = watching;
 exports.fonts = fonts;
 exports.pages = pages;
 
-exports.build = series(cleanDist, building)
+exports.build = series(cleanDist, styles, images, scripts, pages, building)
 exports.default = parallel(styles, images, scripts, pages, watching)

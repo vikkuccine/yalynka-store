@@ -46,15 +46,17 @@
                                         <h4>Висота, м</h4>
                                         <div class="price__wrapper">
                                             <label for="price-from" class="price__input">Від:
-                                                <input type="text" name="price-from" class="price-from" />
+                                                <input type="text" name="price-from" class="price-from"
+                                                    id="price-from">
                                             </label>
-                                            <label for="price-to" class="price__input">До:
-                                                <input type="text" name="price-to" class="price-to" />
+                                            <label for="price-to-1" class="price__input">До:
+                                                <input type="text" name="price-to" class="price-to" id="price-to-1">
                                             </label>
                                         </div>
                                         <div class="multi-range-slider">
-                                            <input type="range" id="input-left" min="0" step="1" max="100" value="0">
-                                            <input type="range" id="input-right" min="0" step="1" max="100" value="100">
+                                            <input type="range" class="input-left" min="0" step="1" max="100" value="0">
+                                            <input type="range" class="input-right" min="0" step="1" max="100"
+                                                value="100">
 
                                             <div class="slider">
                                                 <div class="track"></div>
@@ -69,16 +71,18 @@
                                     <div id="price-range" class="price-wrapper__main">
                                         <h4>Ціна, грн</h4>
                                         <div class="price__wrapper">
-                                            <label for="price-from" class="price__input">Від:
-                                                <input type="text" name="price-from" class="price-from" />
+                                            <label for="price-from-2" class="price__input">Від:
+                                                <input type="text" name="price-from" class="price-from"
+                                                    id="price-from-2">
                                             </label>
-                                            <label for="price-to" class="price__input">До:
-                                                <input type="text" name="price-to" class="price-to" />
+                                            <label for="price-to-3" class="price__input">До:
+                                                <input type="text" name="price-to" class="price-to" id="price-to-3">
                                             </label>
                                         </div>
                                         <div class="multi-range-slider">
-                                            <input type="range" id="input-left" min="0" step="1" max="5000" value="0">
-                                            <input type="range" id="input-right" min="0" step="1" max="50000"
+                                            <input type="range" class="input-left" min="0" step="1" max="5000"
+                                                value="0">
+                                            <input type="range" class="input-right" min="0" step="1" max="50000"
                                                 value="50000">
 
                                             <div class="slider">
@@ -96,7 +100,7 @@
                                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
                                             <input
                                                 class="relative float-left -ml-[1.4rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] cursor-none appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] indeterminate:border-primary indeterminate:bg-primary indeterminate:after:absolute indeterminate:after:ml-[0.2rem] indeterminate:after:mt-[6px] indeterminate:after:w-[0.5rem] indeterminate:after:border-[0.05rem] indeterminate:after:border-solid indeterminate:after:border-white hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent indeterminate:focus:after:w-[0.5rem] indeterminate:focus:after:rounded-none indeterminate:focus:after:border-[0.125rem] indeterminate:focus:after:border-b-0 indeterminate:focus:after:border-l-0 indeterminate:focus:after:border-r-0 dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:indeterminate:border-primary dark:indeterminate:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                                                type="checkbox" value="" id="flexCheckIndeterminate" />
+                                                type="checkbox" value="" id="flexCheckIndeterminate">
                                             <label class="inline-block pl-[0.15rem] hover:cursor-pointer"
                                                 for="flexCheckIndeterminate">
                                                 Лита
@@ -106,9 +110,9 @@
                                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
                                             <input
                                                 class="relative float-left -ml-[1.4rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] cursor-none appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] indeterminate:border-primary indeterminate:bg-primary indeterminate:after:absolute indeterminate:after:ml-[0.2rem] indeterminate:after:mt-[6px] indeterminate:after:w-[0.5rem] indeterminate:after:border-[0.05rem] indeterminate:after:border-solid indeterminate:after:border-white hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent indeterminate:focus:after:w-[0.5rem] indeterminate:focus:after:rounded-none indeterminate:focus:after:border-[0.125rem] indeterminate:focus:after:border-b-0 indeterminate:focus:after:border-l-0 indeterminate:focus:after:border-r-0 dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:indeterminate:border-primary dark:indeterminate:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                                                type="checkbox" value="" id="flexCheckIndeterminate" />
+                                                type="checkbox" value="" id="flexCheckIndeterminate-2">
                                             <label class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                for="flexCheckIndeterminate">
+                                                for="flexCheckIndeterminate-2">
                                                 Лита + ПВХ
                                             </label>
                                         </div>
@@ -116,9 +120,9 @@
                                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
                                             <input
                                                 class="relative float-left -ml-[1.4rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] cursor-none appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] indeterminate:border-primary indeterminate:bg-primary indeterminate:after:absolute indeterminate:after:ml-[0.2rem] indeterminate:after:mt-[6px] indeterminate:after:w-[0.5rem] indeterminate:after:border-[0.05rem] indeterminate:after:border-solid indeterminate:after:border-white hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent indeterminate:focus:after:w-[0.5rem] indeterminate:focus:after:rounded-none indeterminate:focus:after:border-[0.125rem] indeterminate:focus:after:border-b-0 indeterminate:focus:after:border-l-0 indeterminate:focus:after:border-r-0 dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:indeterminate:border-primary dark:indeterminate:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                                                type="checkbox" value="" id="flexCheckIndeterminate" />
+                                                type="checkbox" value="" id="flexCheckIndeterminate-3">
                                             <label class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                for="flexCheckIndeterminate">
+                                                for="flexCheckIndeterminate-3">
                                                 ПВХ
                                             </label>
                                         </div>
@@ -130,9 +134,9 @@
                                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
                                             <input
                                                 class="relative float-left -ml-[1.4rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] cursor-none appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] indeterminate:border-primary indeterminate:bg-primary indeterminate:after:absolute indeterminate:after:ml-[0.2rem] indeterminate:after:mt-[6px] indeterminate:after:w-[0.5rem] indeterminate:after:border-[0.05rem] indeterminate:after:border-solid indeterminate:after:border-white hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent indeterminate:focus:after:w-[0.5rem] indeterminate:focus:after:rounded-none indeterminate:focus:after:border-[0.125rem] indeterminate:focus:after:border-b-0 indeterminate:focus:after:border-l-0 indeterminate:focus:after:border-r-0 dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:indeterminate:border-primary dark:indeterminate:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                                                type="checkbox" value="" id="flexCheckIndeterminate" />
+                                                type="checkbox" value="" id="flexCheckIndeterminate-4">
                                             <label class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                for="flexCheckIndeterminate">
+                                                for="flexCheckIndeterminate-4">
                                                 Каркасна
                                             </label>
                                         </div>
@@ -140,9 +144,9 @@
                                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
                                             <input
                                                 class="relative float-left -ml-[1.4rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] cursor-none appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] indeterminate:border-primary indeterminate:bg-primary indeterminate:after:absolute indeterminate:after:ml-[0.2rem] indeterminate:after:mt-[6px] indeterminate:after:w-[0.5rem] indeterminate:after:border-[0.05rem] indeterminate:after:border-solid indeterminate:after:border-white hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent indeterminate:focus:after:w-[0.5rem] indeterminate:focus:after:rounded-none indeterminate:focus:after:border-[0.125rem] indeterminate:focus:after:border-b-0 indeterminate:focus:after:border-l-0 indeterminate:focus:after:border-r-0 dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:indeterminate:border-primary dark:indeterminate:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                                                type="checkbox" value="" id="flexCheckIndeterminate" />
+                                                type="checkbox" value="" id="flexCheckIndeterminate-5">
                                             <label class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                for="flexCheckIndeterminate">
+                                                for="flexCheckIndeterminate-5">
                                                 Стовбурна
                                             </label>
                                         </div>
@@ -208,7 +212,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector"
+                                                id="selector">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -264,7 +269,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-2"
+                                                id="selector-2">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -320,7 +326,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-3"
+                                                id="selector-3">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -376,7 +383,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-4"
+                                                id="selector-4">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -432,7 +440,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-5"
+                                                id="selector-5">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -488,7 +497,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-6"
+                                                id="selector-6">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -544,7 +554,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-7"
+                                                id="selector-7">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -600,7 +611,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-8"
+                                                id="selector-8">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -656,7 +668,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-9"
+                                                id="selector-9">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -712,7 +725,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-10"
+                                                id="selector-10">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -768,7 +782,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-11"
+                                                id="selector-11">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">
@@ -824,7 +839,8 @@
                                             </div>
                                         </div>
                                         <div class="card__price-block card__price-block--select">
-                                            <select class="card-choice__selector js-choice" name="" id="">
+                                            <select class="card-choice__selector js-choice" name="selector-12"
+                                                id="selector-12">
                                                 <option value="">Висота</option>
                                             </select>
                                             <div class="card__icon">

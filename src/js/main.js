@@ -132,10 +132,10 @@ class HeightRangeSlider {
         this.container = document.querySelector(selector);
 
         if (this.container) {
-            this.inputLeft = this.container.querySelector("#input-left");
+            this.inputLeft = this.container.querySelector(".input-left");
             this.iconLeft = this.container.querySelector(".multi-range-slider__left")
             this.iconRight = this.container.querySelector(".multi-range-slider__right")
-            this.inputRight = this.container.querySelector("#input-right");
+            this.inputRight = this.container.querySelector(".input-right");
             this.range = this.container.querySelector(".range");
             this.priceFrom = this.container.querySelector(".price-from");
             this.priceTo = this.container.querySelector(".price-to");
@@ -278,13 +278,15 @@ const dropDown = new DropDown();
 class FilterDropDown {
     constructor() {
         this.gridFilter = document.querySelector('.catalog__filter-media');
-        this.toggleBtnFilter = document.querySelector('.catalog__filter-icon-open');
-        this.toggleBtnSort = document.querySelector('.catalog__filter-icon-sort');
-        this.gridSort = document.querySelector('.catalog__tameplate-media');
-        this.filterIcon = document.querySelector('.catalog__filter-icon-open');
-        this.sortIcon = document.querySelector('.catalog__filter-icon-sort')
-        this.dropDownFilter()
-        this.dropDownSort()
+        if (this.gridFilter) {
+            this.toggleBtnFilter = document.querySelector('.catalog__filter-icon-open');
+            this.toggleBtnSort = document.querySelector('.catalog__filter-icon-sort');
+            this.gridSort = document.querySelector('.catalog__tameplate-media');
+            this.filterIcon = document.querySelector('.catalog__filter-icon-open');
+            this.sortIcon = document.querySelector('.catalog__filter-icon-sort')
+            this.dropDownFilter()
+            this.dropDownSort()
+        }
     }
 
     dropDownFilter() {

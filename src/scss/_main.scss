@@ -760,6 +760,9 @@
         display: none;
     }
 
+    &__filter-media {
+        flex: 1 0 auto;
+    }
 
     &__wrap-block {
         display: flex;
