@@ -24,5 +24,5 @@ Libraries:
 </p>
 
 <p align='center'>
-    <img src='https://vikkuccine.saenq.space/yalynka-store/preview-2.jpg' width='100%'>
+    <img src='https://vikkuccine.saenq.space/yalynka-store/preview-3.jpg' width='100%'>
 </p>
