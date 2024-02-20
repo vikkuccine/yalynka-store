@@ -252,6 +252,7 @@
 
             .side-menu__content {
                 transform: translateX(0);
+                overflow-y: auto;
             }
 
             .side-menu__back-drop {
@@ -860,5 +861,9 @@
         &__tameplate-item:nth-child(2)::after {
             top: 35%;
         }
+    }
+
+    .side-menu__item-photo {
+        margin-bottom: 28px;
     }
 }
