@@ -14,17 +14,17 @@ Libraries:
 </br>
 </br>
 
-[**Demo**](https://vikkuccine.saenq.space/yalynka-store/item.html)
+[**Demo**](https://vikario.space/yalynka-store/item.html)
 <p align='center'>
-    <img src='https://vikkuccine.saenq.space/yalynka-store/preview.jpg' width='100%'>
+    <img src='https://vikario.space/yalynka-store/preview.jpg' width='100%'>
 </p>
 
-[**Demo**](https://vikkuccine.saenq.space/yalynka-store/)
+[**Demo**](https://vikario.space/yalynka-store/)
 <p align='center'>
-    <img src='https://vikkuccine.saenq.space/yalynka-store/preview-1.jpg' width='100%'>
+    <img src='https://vikario.space/yalynka-store/preview-1.jpg' width='100%'>
 </p>
 
-[**Demo**](https://vikkuccine.saenq.space/yalynka-store/catalog.html)
+[**Demo**](https://vikario.space/yalynka-store/catalog.html)
 <p align='center'>
-    <img src='https://vikkuccine.saenq.space/yalynka-store/preview-3.jpg' width='100%'>
+    <img src='https://vikario.space/yalynka-store/preview-3.jpg' width='100%'>
 </p>
